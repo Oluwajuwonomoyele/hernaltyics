@@ -1,0 +1,56 @@
+nav {
+  width: 100%;
+}
+
+nav section {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  flex-basis: 20%;
+}
+
+nav .nav-links-container {
+  flex-basis: 80%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .nav-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+nav .user-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+nav .user-links button {
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+nav .user-links .sign-up {
+  background-color: #E5B805;
+  color: black;
+}/*# sourceMappingURL=Navbar.css.map */
