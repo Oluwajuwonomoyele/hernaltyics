@@ -7,7 +7,11 @@ import {
     MenuItem,
     Flex,
 } from '@chakra-ui/react';
-import { FaChevronDown } from "react-icons/fa";
+import { FaChevronDown, FaUserAlt } from "react-icons/fa";
+import users from '../assets/users.svg';
+import reporter from '../assets/reporter.svg';
+import dtr from '../assets/dtr.svg';
+
 
 const Navbar = () => {
     return (  
@@ -41,40 +45,83 @@ const Navbar = () => {
                                     </Flex>
                                     </MenuButton>
                                     <MenuList 
-                                    minW={230}
                                     color='rgb(56,97,116)'
                                     background='white'
-                                    outline='none'
-                                    border='none'
+                                    p={2}
                                     >
-                                        <MenuItem 
-                                        fontSize='14px'
-                                        p={3}
-                                        outline='none'
-                                        fontWeight='semibold'
-                                        borderColor='rgb(56,97,116)'
-                                        borderWidth={1}>General User</MenuItem>
-                                        <MenuItem
-                                        fontSize='14px'
-                                        p={3}
-                                        outline='none'
-                                        fontWeight='semibold'
-                                        borderColor='rgb(56,97,116)'
-                                        borderWidth={1}>Decide To Run</MenuItem>
-                                        <MenuItem
-                                        fontSize='14px'
-                                        p={3}
-                                        outline='none'
-                                        fontWeight='semibold'
-                                        borderColor='rgb(56,97,116)'
-                                        borderWidth={1}>Election Candidates</MenuItem>
-                                        <MenuItem
-                                        fontSize='14px'
-                                        p={3}
-                                        outline='none'
-                                        fontWeight='semibold'
-                                        borderColor='rgb(56,97,116)'
-                                        borderWidth={1}>Reporters</MenuItem>
+                                        <Flex maxWidth={700} flexWrap='wrap'>
+                                            <MenuItem 
+                                            fontSize='14px'
+                                            p={5}
+                                            flexBasis={350}
+                                            border='transparent'
+                                            background='white'
+                                            cursor='pointer'>
+                                                <Flex alignItems='center' gap={3}>
+                                                    <div className='comm-icon-div'>
+                                                        <FaUserAlt size={20}/>
+                                                    </div>
+                                                    <div className='comm-content-div'>
+                                                        <h1>General User</h1>
+                                                        <p>Odio mi in id tellus turpis elementum ipsum</p>
+                                                    </div>
+                                                </Flex>
+                                            </MenuItem>
+                                            <MenuItem
+                                            fontSize='14px'
+                                            p={5}
+                                            flexBasis={350}
+                                            border='transparent'
+                                            background='white'
+                                            cursor='pointer'
+                                            >
+                                                <Flex alignItems='center' gap={3}>
+                                                    <div className='comm-icon-div'>
+                                                        <img src={users} alt="users" />
+                                                    </div>
+                                                    <div className='comm-content-div'>
+                                                        <h1>Election Candidates</h1>
+                                                        <p>Odio mi in id tellus turpis elementum ipsum</p>
+                                                    </div>
+                                                </Flex>
+                                            </MenuItem>
+                                            <MenuItem
+                                            fontSize='14px'
+                                            p={5}
+                                            flexBasis={350}
+                                            border='transparent'
+                                            background='white'
+                                            cursor='pointer'
+                                            >
+                                                <Flex alignItems='center' gap={3}>
+                                                    <div className='comm-icon-div'>
+                                                        <img src={dtr} alt="dtr" />
+                                                    </div>
+                                                    <div className='comm-content-div'>
+                                                        <h1>Decide To Run (DTR)</h1>
+                                                        <p>Odio mi in id tellus turpis elementum ipsum</p>
+                                                    </div>
+                                                </Flex>
+                                            </MenuItem>
+                                            <MenuItem
+                                            fontSize='14px'
+                                            p={5}
+                                            flexBasis={350}
+                                            border='transparent'
+                                            background='white'
+                                            cursor='pointer'
+                                            >
+                                                <Flex alignItems='center' gap={3}>
+                                                    <div className='comm-icon-div'>
+                                                        <img src={reporter} alt="reporter" />
+                                                    </div>
+                                                    <div className='comm-content-div'>
+                                                        <h1>Reporters</h1>
+                                                        <p>Odio mi in id tellus turpis elementum ipsum</p>
+                                                    </div>
+                                                </Flex>
+                                            </MenuItem>
+                                        </Flex>
                                     </MenuList>
                                 </>
                             )}
@@ -111,15 +158,19 @@ const Navbar = () => {
                                         p={3}
                                         outline='none'
                                         fontWeight='semibold'
-                                        borderColor='rgb(238,238,240)'
-                                        borderWidth={2}>Election Day Live Updates</MenuItem>
+                                        border='none'
+                                        backgroundColor='white'>Election Day Live Updates</MenuItem>
                                         <MenuItem
                                         fontSize='14px'
                                         p={3}
                                         outline='none'
                                         fontWeight='semibold'
                                         borderColor='rgb(238,238,240)'
-                                        borderWidth={2}>Post-Election Analysis</MenuItem>
+                                        borderBottom='none'
+                                        borderLeft='none'
+                                        borderRight='none'
+                                        borderTopWidth={2}
+                                        background='white'>Post-Election Analysis</MenuItem>
                                     </MenuList>
                                 </>
                             )}

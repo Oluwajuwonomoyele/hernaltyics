@@ -56,4 +56,17 @@ nav .user-links button {
 nav .user-links .sign-up {
   background-color: #E5B805;
   color: black;
+}
+
+.comm-icon-div {
+  background-color: rgb(208, 248, 255);
+  padding: 0.5rem;
+}
+
+.comm-content-div h1 {
+  font-size: 14px;
+}
+.comm-content-div p {
+  font-size: 13px;
+  margin-top: 4px;
 }/*# sourceMappingURL=Navbar.css.map */
