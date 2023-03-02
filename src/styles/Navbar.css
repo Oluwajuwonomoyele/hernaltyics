@@ -30,6 +30,9 @@ nav .nav-links {
   text-transform: uppercase;
   font-weight: bold;
   padding: 1rem 2rem;
+  font-size: 14px;
+}
+nav .nav-links p {
   cursor: pointer;
 }
 
@@ -46,7 +49,7 @@ nav .user-links button {
   font-weight: bold;
   outline: none;
   border: none;
-  font-size: 16px;
+  font-size: 14px;
   border-radius: 5px;
   cursor: pointer;
 }
