@@ -64,7 +64,7 @@
             background-color: #C6C7CB;
             margin: 1rem 0;
             border-radius: 4px;
-            opacity: 0.5;
+            opacity: 0.2;
         }
         .map-container {
             position: relative;
@@ -147,6 +147,156 @@
                     }
                 }
             }   
+        }
+        .stats {
+            margin-top: 2rem;
+            background-color: $primaryColor3;
+            border: 1px solid#393C4A ;
+            border-radius: 13px;
+            padding: 2rem;
+            display: flex;
+            justify-content: space-between;
+            min-height: 428px;
+
+            .first {
+                border: 1px solid#393C4A;
+                padding: 2rem; 
+                border-radius: 13px;
+                width: 380px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+
+                
+                .outer {
+                    padding: 1.5rem;
+                    border-radius: 50%;
+                    background-color: #449352;
+                    margin-right: 6rem;
+                    margin-bottom: 3rem;
+                    position: relative;
+                    z-index: 2;
+
+                    .middle {
+                        padding: 0.5rem;
+                        background-color: $primaryColor3;
+                        border-radius: 50%;
+
+                        .inner {
+                            border: 1px solid#393C4A ; 
+                            width: 150px;
+                            height: 150px;
+                            border-radius: 50%;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            background-color: $primaryColor3;
+        
+                            p {
+                                font-size: 14px;
+                            }
+                            h1 {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+                .rv {
+                    position: absolute;
+                    top: 15%;
+                    right: 8%;
+
+                    p {
+                        font-size: 12px;
+                        opacity: 50%;
+                    }
+                    h2 {
+                        font-size: 15px;
+                    }
+                }
+                .ac {
+                    position: absolute;
+                    bottom: 10%;
+                    left: 15%;
+
+                    p {
+                        font-size: 12px;
+                        opacity: 50%;
+                    }
+                    h2 {
+                        font-size: 15px;
+                    }
+                }
+                .rv-arrow {
+                    position: absolute;
+                    top: 20%;
+                    right: 35%;
+                }
+                .av-arrow {
+                    position: absolute;
+                    bottom: 23%;
+                    left: 27%;
+                    z-index: 1;
+                }
+            }
+            .second {
+                width: 538px;
+                height: 100%;
+                border: 1px solid#393C4A;
+                padding: 2rem; 
+                border-radius: 13px;
+
+                h2 {
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+
+                .gp-zones {
+                    padding-top: 2.3rem;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .right {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.5rem;
+                        align-self: flex-end;
+
+                        .gp-general {
+                            display: flex;
+                            justify-content: space-between;
+                            gap: 1rem;
+                            font-size: 12px;
+    
+                            .gp-con {
+                                display: flex;
+                                align-items: center;
+                                gap: 0.5rem;
+    
+                                .rec {
+                                    width: 22px;
+                                    height: 14px;
+                                    background-color: #449352;
+                                }
+                            }
+    
+                            p {
+                                opacity: 60%;
+                            }
+                        }
+    
+                    }
+                }
+            }
+            .third {
+                width: 270px;
+                height: 100%;
+                border: 1px solid#393C4A;
+                padding: 2rem; 
+                border-radius: 13px;
+            }
         }
     }
 }

@@ -1,0 +1,59 @@
+@import '..//Variables/Variables.scss';
+
+footer {
+    background-color: $footerBg;
+    height: 360px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+
+    .footer-container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 2rem;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+
+        .ls {
+            flex-basis: 25%;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            justify-content: flex-start;
+            align-items: flex-start;
+            align-self: flex-start;
+        }
+        .rs {
+            flex-basis: 60%;
+            display: flex;
+            justify-content: space-between;
+
+            .footer-links {
+                h1 {
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+                .links {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem;
+                    margin-top: 2rem;
+
+                    .socials {
+                        display: flex;
+                        gap: 1rem;
+    
+                        img {
+                            width: 24px;
+                            height: 24px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

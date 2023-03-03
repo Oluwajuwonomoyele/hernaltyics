@@ -56,7 +56,7 @@
   background-color: #C6C7CB;
   margin: 1rem 0;
   border-radius: 4px;
-  opacity: 0.5;
+  opacity: 0.2;
 }
 .hero-section .hero-container .map-container {
   position: relative;
@@ -131,4 +131,138 @@
   width: 32px;
   height: 24px;
   background-color: #D62B3C;
+}
+.hero-section .hero-container .stats {
+  margin-top: 2rem;
+  background-color: #1B1F30;
+  border: 1px solid #393C4A;
+  border-radius: 13px;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  min-height: 428px;
+}
+.hero-section .hero-container .stats .first {
+  border: 1px solid #393C4A;
+  padding: 2rem;
+  border-radius: 13px;
+  width: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.hero-section .hero-container .stats .first .outer {
+  padding: 1.5rem;
+  border-radius: 50%;
+  background-color: #449352;
+  margin-right: 6rem;
+  margin-bottom: 3rem;
+  position: relative;
+  z-index: 2;
+}
+.hero-section .hero-container .stats .first .outer .middle {
+  padding: 0.5rem;
+  background-color: #1B1F30;
+  border-radius: 50%;
+}
+.hero-section .hero-container .stats .first .outer .middle .inner {
+  border: 1px solid #393C4A;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #1B1F30;
+}
+.hero-section .hero-container .stats .first .outer .middle .inner p {
+  font-size: 14px;
+}
+.hero-section .hero-container .stats .first .outer .middle .inner h1 {
+  font-size: 20px;
+}
+.hero-section .hero-container .stats .first .rv {
+  position: absolute;
+  top: 15%;
+  right: 8%;
+}
+.hero-section .hero-container .stats .first .rv p {
+  font-size: 12px;
+  opacity: 50%;
+}
+.hero-section .hero-container .stats .first .rv h2 {
+  font-size: 15px;
+}
+.hero-section .hero-container .stats .first .ac {
+  position: absolute;
+  bottom: 10%;
+  left: 15%;
+}
+.hero-section .hero-container .stats .first .ac p {
+  font-size: 12px;
+  opacity: 50%;
+}
+.hero-section .hero-container .stats .first .ac h2 {
+  font-size: 15px;
+}
+.hero-section .hero-container .stats .first .rv-arrow {
+  position: absolute;
+  top: 20%;
+  right: 35%;
+}
+.hero-section .hero-container .stats .first .av-arrow {
+  position: absolute;
+  bottom: 23%;
+  left: 27%;
+  z-index: 1;
+}
+.hero-section .hero-container .stats .second {
+  width: 538px;
+  height: 100%;
+  border: 1px solid #393C4A;
+  padding: 2rem;
+  border-radius: 13px;
+}
+.hero-section .hero-container .stats .second h2 {
+  font-size: 14px;
+  font-weight: 400;
+}
+.hero-section .hero-container .stats .second .gp-zones {
+  padding-top: 2.3rem;
+  display: flex;
+  justify-content: space-between;
+}
+.hero-section .hero-container .stats .second .gp-zones .right {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-self: flex-end;
+}
+.hero-section .hero-container .stats .second .gp-zones .right .gp-general {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 12px;
+}
+.hero-section .hero-container .stats .second .gp-zones .right .gp-general .gp-con {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.hero-section .hero-container .stats .second .gp-zones .right .gp-general .gp-con .rec {
+  width: 22px;
+  height: 14px;
+  background-color: #449352;
+}
+.hero-section .hero-container .stats .second .gp-zones .right .gp-general p {
+  opacity: 60%;
+}
+.hero-section .hero-container .stats .third {
+  width: 270px;
+  height: 100%;
+  border: 1px solid #393C4A;
+  padding: 2rem;
+  border-radius: 13px;
 }/*# sourceMappingURL=Hero.css.map */
