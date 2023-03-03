@@ -15,6 +15,7 @@ import avArrow from '../assets/ac-arrow.svg'
 import smallMap from '../assets/small-map.svg'
 import male from '../assets/male.svg'
 import female from '../assets/female.svg'
+import filter from '../assets/filter.svg'
 
 
 const Hero = () => {
@@ -24,8 +25,13 @@ const Hero = () => {
                 <div className="header-1">
                     <h1>Post Election Data</h1>
                     <div><span>PRESIDENTIAL</span> / <span>2023</span></div>
+                    <h4><span>UPDATED</span> MAR. 15, 2021, 9:43 A.M. EDT</h4>
                 </div>
                 <div className='header-2'>
+                    <div className="filters">
+                        <p>Apply Filters</p>
+                        <img src={filter} alt="filter" />
+                    </div>
                     <h2>Presidential Race</h2>
                     <div className='dropdown-container'>
                         <Menu >
@@ -324,42 +330,48 @@ const Hero = () => {
                                 <div className="ne gp-general">
                                     <div className='ne-con gp-con'>
                                         <div className='rec'></div>
-                                        North East 
+                                        <span className='full'>North East </span>
+                                        <span className="short">NE</span>
                                     </div>
                                     <p>3,000</p>
                                 </div>
                                 <div className="nw gp-general">
                                     <div className='nw-con gp-con'>
                                             <div className='rec'></div>
-                                            North West 
+                                            <span className='full'>North West </span>
+                                            <span className="short">NW</span>
                                     </div>
                                     <p>3,000</p>
                                     </div>
                                 <div className="nc gp-general">
                                 <div className='nc-con gp-con'>
                                     <div className='rec'></div>
-                                    North Central 
+                                    <span className='full'>North Central </span>
+                                    <span className="short">NC</span>
                                 </div>
                                     <p>3,000</p>
                                 </div>
                                 <div className="sw gp-general">
                                 <div className='sw-con gp-con'>
                                         <div className='rec'></div>
-                                        South West 
+                                        <span className='full'>South West </span>
+                                        <span className="short">SW</span>
                                 </div>
                                     <p>3,000</p>
                                 </div>
                                 <div className="ss gp-general">
                                 <div className='ss-con gp-con'>
                                         <div className='rec'></div>
-                                        South South 
+                                        <span className='full'>South South </span>
+                                        <span className="short">SS</span>
                                     </div>
                                     <p>3,000</p>
                                 </div>
                                 <div className="se gp-general">
                                 <div className='se-con gp-con'>
                                         <div className='rec'></div>
-                                        South East 
+                                        <span className='full'>South East</span> 
+                                        <span className="short">SE</span>
                                     </div>
                                     <p>3,000</p>
                                 </div>

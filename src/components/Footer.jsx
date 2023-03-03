@@ -43,9 +43,10 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-
                 </div>
-
+            </div>
+            <div className="attribution">
+                Designed by <a href="juwonolutomisin.vercel.app" target='_blank' rel='no-referrer'>Olutomisin Oluwajuwon</a>
             </div>
         </footer>
     );

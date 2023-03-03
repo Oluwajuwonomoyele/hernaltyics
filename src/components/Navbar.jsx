@@ -8,6 +8,7 @@ import {
     Flex,
 } from '@chakra-ui/react';
 import { FaChevronDown, FaUserAlt } from "react-icons/fa";
+import { HiMenu } from "react-icons/hi";
 import users from '../assets/users.svg';
 import reporter from '../assets/reporter.svg';
 import dtr from '../assets/dtr.svg';
@@ -182,6 +183,10 @@ const Navbar = () => {
                         <button>log in</button>
                         <button className='sign-up'>sign up</button>
                     </div>
+                </div>
+
+                <div className='menu'>
+                    <HiMenu />
                 </div>
             </section>
         </nav>

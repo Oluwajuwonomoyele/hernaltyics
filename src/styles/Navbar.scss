@@ -16,6 +16,14 @@ nav .logo {
     
     img {
         cursor: pointer;
+
+        @media screen and (max-width: 425px) {
+            width: 138px;;   
+        }
+    }
+
+    @media screen and (max-width: 425px) {
+        flex-basis: 100% 
     }
 }
 nav .nav-links-container {
@@ -24,6 +32,10 @@ nav .nav-links-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media screen and (max-width: 425px) {
+        display: none;   
+    }
 }
  nav .nav-links {
     display: flex;
@@ -72,5 +84,17 @@ nav .user-links {
     p {
         font-size: 13px;
         margin-top: 4px;
+    }
+}
+nav .menu {
+    cursor: pointer;
+
+    svg {
+        color: white;
+        font-size: 24px;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;   
     }
 }

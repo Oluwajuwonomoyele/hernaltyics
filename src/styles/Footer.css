@@ -1,19 +1,24 @@
 footer {
   background-color: rgba(255, 255, 255, 0.1);
-  height: 360px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  color: white;
 }
 footer .footer-container {
   max-width: 1400px;
   margin: 0 auto;
   padding: 2rem;
   display: flex;
+  height: 360px;
   width: 100%;
-  justify-content: space-between;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+@media screen and (max-width: 425px) {
+  footer .footer-container {
+    flex-direction: column;
+    gap: 4rem;
+    height: auto;
+  }
 }
 footer .footer-container .ls {
   flex-basis: 25%;
@@ -23,14 +28,30 @@ footer .footer-container .ls {
   justify-content: flex-start;
   align-items: flex-start;
   align-self: flex-start;
+  margin-top: 2rem;
 }
 footer .footer-container .ls img {
   cursor: pointer;
+}
+@media screen and (max-width: 425px) {
+  footer .footer-container .ls {
+    flex-basis: 100%;
+  }
 }
 footer .footer-container .rs {
   flex-basis: 60%;
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 425px) {
+  footer .footer-container .rs {
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    justify-content: flex-start;
+    row-gap: 3rem;
+    -moz-column-gap: 4rem;
+         column-gap: 4rem;
+  }
 }
 footer .footer-container .rs .footer-links h1 {
   font-size: 16px;
@@ -53,4 +74,17 @@ footer .footer-container .rs .footer-links .links .socials img {
   width: 24px;
   height: 24px;
   cursor: pointer;
+}
+footer .attribution {
+  text-align: center;
+  padding-bottom: 1rem;
+  color: white;
+  font-size: 14px;
+}
+footer .attribution a {
+  font-weight: 700;
+  text-decoration: none;
+  color: #449352;
+  opacity: 70%;
+  font-size: 16px;
 }/*# sourceMappingURL=Footer.css.map */
