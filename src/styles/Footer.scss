@@ -25,6 +25,10 @@ footer {
             justify-content: flex-start;
             align-items: flex-start;
             align-self: flex-start;
+
+            img {
+                cursor: pointer;
+            }
         }
         .rs {
             flex-basis: 60%;
@@ -41,6 +45,10 @@ footer {
                     flex-direction: column;
                     gap: 2rem;
                     margin-top: 2rem;
+
+                    p {
+                        cursor: pointer;
+                    }
 
                     .socials {
                         display: flex;

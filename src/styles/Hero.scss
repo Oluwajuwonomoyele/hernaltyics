@@ -42,19 +42,13 @@
             .dropdown-container {
                 display: flex;
                 align-items: center;
-                gap: 3rem;
+                gap: 1rem;
 
-                div {
-                    background-color:#1C2031;
-                    padding: 0.5rem 1rem;
+                .dd-line {
+                    width: 100%;
+                    height: 1px;
+                    background-color: #212842;
                     border-radius: 4px;
-                    font-size: 14px;
-                    display: flex;
-                    align-items: center;
-                    gap: 8rem;
-                    cursor: pointer;
-                    color: #C6C7CB;
-                    border: 2px solid #252B46;
                 }
             }
         }
@@ -156,13 +150,16 @@
             padding: 2rem;
             display: flex;
             justify-content: space-between;
+            align-items: center;
             min-height: 428px;
+            height: 100%;
 
             .first {
                 border: 1px solid#393C4A;
                 padding: 2rem; 
                 border-radius: 13px;
                 width: 380px;
+                height: 337px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -170,18 +167,20 @@
 
                 
                 .outer {
-                    padding: 1.5rem;
+                    border: 1.5rem solid #449352;
                     border-radius: 50%;
-                    background-color: #449352;
+                    border-top-color: #E30325;
                     margin-right: 6rem;
                     margin-bottom: 3rem;
                     position: relative;
                     z-index: 2;
+                    transform: rotate(50deg);
 
                     .middle {
                         padding: 0.5rem;
                         background-color: $primaryColor3;
                         border-radius: 50%;
+                        transform: rotate(-50deg);
 
                         .inner {
                             border: 1px solid#393C4A ; 
@@ -243,7 +242,7 @@
             }
             .second {
                 width: 538px;
-                height: 100%;
+                height: 337px;
                 border: 1px solid#393C4A;
                 padding: 2rem; 
                 border-radius: 13px;
@@ -263,6 +262,7 @@
                         flex-direction: column;
                         gap: 0.5rem;
                         align-self: flex-end;
+                        margin-bottom: 2rem;
 
                         .gp-general {
                             display: flex;
@@ -278,7 +278,37 @@
                                 .rec {
                                     width: 22px;
                                     height: 14px;
+                                    border-radius: 2px;
+                                }
+                            }
+                            .ne-con {
+                                div {
                                     background-color: #449352;
+                                }
+                            }
+                            .nw-con {
+                                div {
+                                    background-color: #6D769D;
+                                }
+                            }
+                            .nc-con {
+                                div {
+                                    background-color: #A163BE;
+                                }
+                            }
+                            .sw-con {
+                                div {
+                                    background-color: #E30325;
+                                }
+                            }
+                            .ss-con {
+                                div {
+                                    background-color: #2249D1;
+                                }
+                            }
+                            .se-con {
+                                div {
+                                    background-color: #018796;
                                 }
                             }
     
@@ -292,10 +322,39 @@
             }
             .third {
                 width: 270px;
-                height: 100%;
+                height: 337px;
                 border: 1px solid#393C4A;
                 padding: 2rem; 
                 border-radius: 13px;
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+
+                .third-header {
+                    
+                    h2 {
+                        font-size: 14px;
+                        font-weight: normal;
+                    }
+                    p {
+                        font-size: 20px;
+                        font-weight: 700;
+                    }
+                }
+                .tem {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem;
+
+                    h4 {
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+                    p {
+                        font-size: 20px;
+                        font-weight: 700;
+                    }
+                }
             }
         }
     }

@@ -24,6 +24,9 @@ footer .footer-container .ls {
   align-items: flex-start;
   align-self: flex-start;
 }
+footer .footer-container .ls img {
+  cursor: pointer;
+}
 footer .footer-container .rs {
   flex-basis: 60%;
   display: flex;
@@ -38,6 +41,9 @@ footer .footer-container .rs .footer-links .links {
   flex-direction: column;
   gap: 2rem;
   margin-top: 2rem;
+}
+footer .footer-container .rs .footer-links .links p {
+  cursor: pointer;
 }
 footer .footer-container .rs .footer-links .links .socials {
   display: flex;

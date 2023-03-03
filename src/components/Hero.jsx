@@ -1,4 +1,11 @@
 import '../styles/Hero.css';
+import {
+    Menu,
+    MenuButton,
+    MenuList,
+    MenuItem,
+    Flex,
+} from '@chakra-ui/react';
 import { FaChevronDown } from "react-icons/fa";
 import map from '../assets/map.svg';
 import plus from '../assets/plus.svg';
@@ -6,6 +13,8 @@ import minus from '../assets/minus.svg';
 import rvArrow from '../assets/rv-arrow.svg';
 import avArrow from '../assets/ac-arrow.svg'
 import smallMap from '../assets/small-map.svg'
+import male from '../assets/male.svg'
+import female from '../assets/female.svg'
 
 
 const Hero = () => {
@@ -19,18 +28,238 @@ const Hero = () => {
                 <div className='header-2'>
                     <h2>Presidential Race</h2>
                     <div className='dropdown-container'>
-                        <div>
-                            <p>Election Data</p>
-                            <FaChevronDown />
-                        </div>
-                        <div>
-                            <p>Presidential</p>
-                            <FaChevronDown />
-                        </div>
-                        <div>
-                            <p>2023</p>
-                            <FaChevronDown />
-                        </div>
+                        <Menu >
+                            {({isOpen}) => (
+                                <>
+                                    <MenuButton
+                                    px={5}
+                                    py={1}
+                                    width='260px'
+                                    height='45px'
+                                    outline='none'
+                                    background='#1C2031'
+                                    borderRadius='4px'
+                                    color='white'
+                                    fontSize='14px'
+                                    cursor='pointer'
+                                    border='2px solid #252B46'
+                                    isActive={isOpen}>
+                                    <Flex justifyContent='space-between' alignItems='center'>
+                                        <p>Post Election</p>
+                                        <FaChevronDown />
+                                    </Flex>
+                                    </MenuButton>
+                                    <MenuList 
+                                    width='260px'
+                                    border='2px solid #212842'
+                                    borderRadius='6px'
+                                    px={2}
+                                    zIndex={5}
+                                    background='#131726'
+                                    >
+                                        <MenuItem 
+                                        cursor='pointer'
+                                        fontSize='14px'
+                                        p='1rem 0.5rem' 
+                                        color='#C6C7CB'
+                                        border='none'
+                                        background='#131726'>Pre-Election</MenuItem>
+                                        <div className='dd-line'></div>
+                                        <MenuItem
+                                        cursor='pointer'
+                                        fontSize='14px'
+                                        p='1rem 0.5rem'
+                                        color='#C6C7CB'
+                                        border='none'
+                                        background='#131726'>Election Day Live Updates</MenuItem>
+                                        <div className='dd-line'></div>
+                                        <MenuItem
+                                        cursor='pointer'
+                                        fontSize='14px'
+                                        p='1rem 0.5rem'
+                                        color='#C6C7CB'
+                                        border='none'
+                                        background='#131726'>Post Election Analysis</MenuItem>
+                                    </MenuList>
+                                </>
+                            )}
+                        </Menu>
+                        <Menu >
+                            {({isOpen}) => (
+                                <>
+                                    <MenuButton
+                                    px={5}
+                                    py={1}
+                                    width='260px'
+                                    height='45px'
+                                    outline='none'
+                                    background='#1C2031'
+                                    borderRadius='4px'
+                                    color='white'
+                                    fontSize='14px'
+                                    cursor='pointer'
+                                    border='2px solid #252B46'
+                                    isActive={isOpen}>
+                                    <Flex justifyContent='space-between' alignItems='center'>
+                                        <p>Presedential</p>
+                                        <FaChevronDown />
+                                    </Flex>
+                                    </MenuButton>
+                                    <MenuList 
+                                    width='260px'
+                                    border='1px solid #212842'
+                                    borderRadius='6px'
+                                    zIndex={5}
+                                    background='#131726'
+                                    px={2}
+                                    >
+                                        <MenuItem 
+                                        cursor='pointer'
+                                        fontSize='14px'
+                                        p='1rem 0.5rem' 
+                                        color='#C6C7CB'
+                                        border='none'
+                                        background='#131726'>Presedential</MenuItem>
+                                        <div className='dd-line'></div>
+                                        <MenuItem
+                                        cursor='pointer'
+                                        fontSize='14px'
+                                        p='1rem 0.5rem'
+                                        color='#C6C7CB'
+                                        border='none'
+                                        background='#131726'>Gubernatorial</MenuItem>
+                                        <div className='dd-line'></div>
+                                        <MenuItem
+                                        cursor='pointer'
+                                        fontSize='14px'
+                                        p='1rem 0.5rem'
+                                        color='#C6C7CB'
+                                        border='none'
+                                        background='#131726'>Senate</MenuItem>
+                                        <div className='dd-line'></div>
+                                        <MenuItem
+                                        cursor='pointer'
+                                        fontSize='14px'
+                                        p='1rem 0.5rem'
+                                        color='#C6C7CB'
+                                        border='none'
+                                        background='#131726'>House of Representatives</MenuItem>
+                                    </MenuList>
+                                </>
+                            )}
+                        </Menu>
+                        <Menu >
+                            {({isOpen}) => (
+                                <>
+                                    <MenuButton
+                                    px={5}
+                                    py={1}
+                                    width='260px'
+                                    height='45px'
+                                    outline='none'
+                                    background='#1C2031'
+                                    borderRadius='4px'
+                                    color='white'
+                                    fontSize='14px'
+                                    cursor='pointer'
+                                    border='2px solid #252B46'
+                                    isActive={isOpen}>
+                                    <Flex justifyContent='space-between' alignItems='center'>
+                                        <p>2023</p>
+                                        <FaChevronDown />
+                                    </Flex>
+                                    </MenuButton>
+                                    <MenuList 
+                                    width='260px'
+                                    border='1px solid #212842'
+                                    borderRadius='6px'
+                                    zIndex={5}
+                                    p={2}
+                                    background='#131726'
+                                    >
+                                        <MenuItem 
+                                        cursor='pointer'
+                                        fontSize='14px'
+                                        p='1rem 0.5rem' 
+                                        color='#C6C7CB'
+                                        border='none'
+                                        background='#131726'>2023</MenuItem>
+                                        <div className='dd-line'></div>
+                                        <MenuItem
+                                        cursor='pointer'
+                                        fontSize='14px'
+                                        p='1rem 0.5rem'
+                                        color='#C6C7CB'
+                                        border='none'
+                                        background='#131726'>2019</MenuItem>
+                                        <div className='dd-line'></div>
+                                        <MenuItem
+                                        cursor='pointer'
+                                        fontSize='14px'
+                                        p='1rem 0.5rem'
+                                        color='#C6C7CB'
+                                        border='none'
+                                        background='#131726'>2015</MenuItem>
+                                        <div className='dd-line'></div>
+                                        <MenuItem
+                                        cursor='pointer'
+                                        fontSize='14px'
+                                        p='1rem 0.5rem'
+                                        color='#C6C7CB'
+                                        border='none'
+                                        background='#131726'>2011</MenuItem>
+                                        <div className='dd-line'></div>
+                                        <MenuItem
+                                        cursor='pointer'
+                                        fontSize='14px'
+                                        p='1rem 0.5rem'
+                                        color='#C6C7CB'
+                                        border='none'
+                                        background='#131726'>2007</MenuItem>
+                                        <div className='dd-line'></div>
+                                        <MenuItem
+                                        cursor='pointer'
+                                        fontSize='14px'
+                                        p='1rem 0.5rem'
+                                        color='#C6C7CB'
+                                        border='none'
+                                        background='#131726'>2003</MenuItem>
+                                        <div className='dd-line'></div>
+                                        <MenuItem
+                                        cursor='pointer'
+                                        fontSize='14px'
+                                        p='1rem 0.5rem'
+                                        color='#C6C7CB'
+                                        border='none'
+                                        background='#131726'>1999</MenuItem>
+                                        <div className='dd-line'></div>
+                                        <MenuItem
+                                        cursor='pointer'
+                                        fontSize='14px'
+                                        p='1rem 0.5rem'
+                                        color='#C6C7CB'
+                                        border='none'
+                                        background='#131726'>1995</MenuItem>
+                                        <div className='dd-line'></div>
+                                        <MenuItem
+                                        cursor='pointer'
+                                        fontSize='14px'
+                                        p='1rem 0.5rem'
+                                        color='#C6C7CB'
+                                        border='none'
+                                        background='#131726'>1991</MenuItem>
+                                        <div className='dd-line'></div>
+                                        <MenuItem
+                                        cursor='pointer'
+                                        fontSize='14px'
+                                        p='1rem 0.5rem'
+                                        color='#C6C7CB'
+                                        border='none'
+                                        background='#131726'>1987</MenuItem>
+                                    </MenuList>
+                                </>
+                            )}
+                        </Menu>
                     </div>
                 </div>
                 <div className="line-through"></div>
@@ -138,6 +367,21 @@ const Hero = () => {
                         </div>
                     </div>
                     <div className='third'>
+                        <div className='third-header'>
+                            <h2>TOTAL ELECTED MEMBERS</h2>
+                            <p>10,000</p>
+                        </div>
+
+                        <div className='tem'>
+                            <div>
+                                <h4><span>MALE</span> <img src={male} alt="male" /></h4>
+                                <p>9,000</p>
+                            </div>
+                            <div>
+                                <h4><span>FEMALE</span> <img src={female} alt="female" /></h4>
+                                <p>1,000</p>
+                            </div>
+                        </div>
 
                     </div>
 

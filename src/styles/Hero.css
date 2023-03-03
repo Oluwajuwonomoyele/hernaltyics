@@ -36,19 +36,13 @@
 .hero-section .hero-container .header-2 .dropdown-container {
   display: flex;
   align-items: center;
-  gap: 3rem;
+  gap: 1rem;
 }
-.hero-section .hero-container .header-2 .dropdown-container div {
-  background-color: #1C2031;
-  padding: 0.5rem 1rem;
+.hero-section .hero-container .header-2 .dropdown-container .dd-line {
+  width: 100%;
+  height: 1px;
+  background-color: #212842;
   border-radius: 4px;
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  gap: 8rem;
-  cursor: pointer;
-  color: #C6C7CB;
-  border: 2px solid #252B46;
 }
 .hero-section .hero-container .line-through {
   width: 100%;
@@ -140,31 +134,36 @@
   padding: 2rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   min-height: 428px;
+  height: 100%;
 }
 .hero-section .hero-container .stats .first {
   border: 1px solid #393C4A;
   padding: 2rem;
   border-radius: 13px;
   width: 380px;
+  height: 337px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
 }
 .hero-section .hero-container .stats .first .outer {
-  padding: 1.5rem;
+  border: 1.5rem solid #449352;
   border-radius: 50%;
-  background-color: #449352;
+  border-top-color: #E30325;
   margin-right: 6rem;
   margin-bottom: 3rem;
   position: relative;
   z-index: 2;
+  transform: rotate(50deg);
 }
 .hero-section .hero-container .stats .first .outer .middle {
   padding: 0.5rem;
   background-color: #1B1F30;
   border-radius: 50%;
+  transform: rotate(-50deg);
 }
 .hero-section .hero-container .stats .first .outer .middle .inner {
   border: 1px solid #393C4A;
@@ -220,7 +219,7 @@
 }
 .hero-section .hero-container .stats .second {
   width: 538px;
-  height: 100%;
+  height: 337px;
   border: 1px solid #393C4A;
   padding: 2rem;
   border-radius: 13px;
@@ -239,6 +238,7 @@
   flex-direction: column;
   gap: 0.5rem;
   align-self: flex-end;
+  margin-bottom: 2rem;
 }
 .hero-section .hero-container .stats .second .gp-zones .right .gp-general {
   display: flex;
@@ -254,15 +254,57 @@
 .hero-section .hero-container .stats .second .gp-zones .right .gp-general .gp-con .rec {
   width: 22px;
   height: 14px;
+  border-radius: 2px;
+}
+.hero-section .hero-container .stats .second .gp-zones .right .gp-general .ne-con div {
   background-color: #449352;
+}
+.hero-section .hero-container .stats .second .gp-zones .right .gp-general .nw-con div {
+  background-color: #6D769D;
+}
+.hero-section .hero-container .stats .second .gp-zones .right .gp-general .nc-con div {
+  background-color: #A163BE;
+}
+.hero-section .hero-container .stats .second .gp-zones .right .gp-general .sw-con div {
+  background-color: #E30325;
+}
+.hero-section .hero-container .stats .second .gp-zones .right .gp-general .ss-con div {
+  background-color: #2249D1;
+}
+.hero-section .hero-container .stats .second .gp-zones .right .gp-general .se-con div {
+  background-color: #018796;
 }
 .hero-section .hero-container .stats .second .gp-zones .right .gp-general p {
   opacity: 60%;
 }
 .hero-section .hero-container .stats .third {
   width: 270px;
-  height: 100%;
+  height: 337px;
   border: 1px solid #393C4A;
   padding: 2rem;
   border-radius: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.hero-section .hero-container .stats .third .third-header h2 {
+  font-size: 14px;
+  font-weight: normal;
+}
+.hero-section .hero-container .stats .third .third-header p {
+  font-size: 20px;
+  font-weight: 700;
+}
+.hero-section .hero-container .stats .third .tem {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.hero-section .hero-container .stats .third .tem h4 {
+  font-size: 14px;
+  font-weight: 400;
+}
+.hero-section .hero-container .stats .third .tem p {
+  font-size: 20px;
+  font-weight: 700;
 }/*# sourceMappingURL=Hero.css.map */

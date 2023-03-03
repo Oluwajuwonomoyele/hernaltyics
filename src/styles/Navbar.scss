@@ -13,6 +13,10 @@ nav section {
 }
 nav .logo {
     flex-basis: 20%;
+    
+    img {
+        cursor: pointer;
+    }
 }
 nav .nav-links-container {
     flex-basis: 80%;
