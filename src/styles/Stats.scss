@@ -1,0 +1,313 @@
+@import '../Variables/Variables.scss';
+
+.stats {
+    margin-top: 2rem;
+    background-color: $primaryColor3;
+    border: 1px solid#393C4A ;
+    border-radius: 13px;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 428px;
+    height: 100%;
+
+    .first {
+        border: 1px solid#393C4A;
+        padding: 2rem; 
+        border-radius: 13px;
+        width: 380px;
+        height: 337px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        .outer {
+            border: 1.5rem solid #449352;
+            border-radius: 50%;
+            border-top-color: #E30325;
+            margin-right: 6rem;
+            margin-bottom: 3rem;
+            position: relative;
+            z-index: 2;
+            transform: rotate(50deg);
+
+            @media screen and (max-width: 320px) {
+                margin-right: 3rem;
+                margin-bottom: 0;
+            }
+
+            .middle {
+                padding: 0.5rem;
+                background-color: $primaryColor3;
+                border-radius: 50%;
+                transform: rotate(-50deg);
+
+                .inner {
+                    border: 1px solid#393C4A ; 
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: $primaryColor3;
+
+                    @media screen and (max-width: 375px) {
+                        width: 120px;
+                        height: 120px;
+                    }
+
+                     @media screen and (max-width: 320px) {
+                        width: 90px;
+                        height: 90px;
+                    }
+                    p {
+                        font-size: 14px;
+
+                        @media screen and (max-width: 375px) {
+                            font-size: 12px;
+                        }
+
+                         @media screen and (max-width: 320px) {
+                            font-size: 10px;
+                        }
+                    }
+                    h1 {
+                        font-size: 20px;
+
+                        @media screen and (max-width: 375px) {
+                            font-size: 16px;
+                        }
+
+                        @media screen and (max-width: 320px) {
+                            font-size: 13px;
+                         }
+                    }
+                }
+            }
+        }
+        .rv {
+            position: absolute;
+            top: 15%;
+            right: 8%;
+
+            @media screen and (max-width: 320px) {
+                right: 2%;
+                top: 19%;
+            }
+
+            p {
+                font-size: 12px;
+                opacity: 50%;
+            }
+
+            h2 {
+                font-size: 15px;
+            }
+        }
+        .ac {
+            position: absolute;
+            bottom: 10%;
+            left: 15%;
+
+            p {
+                font-size: 12px;
+                opacity: 50%;
+            }
+
+            h2 {
+                font-size: 15px;
+            }
+        }
+        .rv-arrow {
+            position: absolute;
+            top: 20%;
+            right: 35%;
+
+            @media screen and (max-width: 320px) {
+                top: 27%;
+            }
+        }
+        .av-arrow {
+            position: absolute;
+            bottom: 23%;
+            left: 27%;
+            z-index: 1; 
+        }
+    }
+    .second {
+        width: 538px;
+        height: 337px;
+        border: 1px solid#393C4A;
+        padding: 2rem; 
+        border-radius: 13px;
+
+        h2 {
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        .gp-zones {
+            padding-top: 2.3rem;
+            display: flex;
+            justify-content: space-between;
+
+            @media screen and (max-width: 375px) {
+                flex-direction: column;
+            }
+
+            .right {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                align-self: flex-end;
+                margin-bottom: 2rem;
+
+                .gp-general {
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 1rem;
+                    font-size: 12px;
+
+                    .gp-con {
+                        display: flex;
+                        align-items: center;
+                        gap: 0.5rem;
+
+                        .rec {
+                            width: 22px;
+                            height: 14px;
+                            border-radius: 2px;
+                        }
+                        .short {
+                            @media screen and (min-width: 768px) {
+                               display: none;
+                            }
+                        }
+                    }
+                    .ne-con {
+                        div {
+                            background-color: #449352;
+                        }
+                    }
+                    .nw-con {
+                        div {
+                            background-color: #6D769D;
+                        }
+                    }
+                    .nc-con {
+                        div {
+                            background-color: #A163BE;
+                        }
+                    }
+                    .sw-con {
+                        div {
+                            background-color: #E30325;
+                        }
+                    }
+                    .ss-con {
+                        div {
+                            background-color: #2249D1;
+                        }
+                    }
+                    .se-con {
+                        div {
+                            background-color: #018796;
+                        }
+                    }
+
+                    p {
+                        opacity: 60%;
+                    }
+                }
+
+            }
+        }
+    }
+    .third {
+        width: 270px;
+        height: 337px;
+        border: 1px solid#393C4A;
+        padding: 2rem; 
+        border-radius: 13px;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        @media screen and (max-width: 425px) {
+            width: 100%;
+            height: 100%;
+            border: none;
+         }
+
+        .third-header {
+            
+            h2 {
+                font-size: 14px;
+                font-weight: normal;
+            }
+            p {
+                font-size: 20px;
+                font-weight: 700;
+            }
+        }
+        .tem {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            @media screen and (max-width: 425px) {
+                flex-direction: row;
+                padding-bottom: 2rem;
+             }
+
+            h4 {
+                font-size: 14px;
+                font-weight: 400;
+            }
+            p {
+                font-size: 20px;
+                font-weight: 700;
+            }
+        }
+    }
+    @media screen and (max-width: 425px) {
+        flex-direction: column;
+        padding: 0;
+
+        .first {
+            width: 100%;
+            border: none;
+        }
+        .second {
+            width: 100%;
+            height: auto;
+            border: none;
+
+            .gp-zones {
+                gap: 1rem;
+                align-items: center;
+
+                .left {
+                    img {
+                        max-width: 190px;
+                    }
+                }
+                .right {
+                    .gp-general {
+                        .gp-con {
+                            .full {
+                                @media screen and (max-width: 425px) {
+                                    display: none;
+                                 }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

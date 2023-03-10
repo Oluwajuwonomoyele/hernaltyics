@@ -38,8 +38,7 @@ const Navbar = () => {
                                     background='transparent'
                                     color='white'
                                     fontSize='14px'
-                                    cursor='pointer'
-                                    isActive={isOpen}>
+                                    cursor='pointer'>
                                     <Flex gap={3} alignItems='center'>
                                     <p>our communities</p>
                                     <FaChevronDown />
@@ -140,8 +139,7 @@ const Navbar = () => {
                                     background='transparent'
                                     color='white'
                                     fontSize='14px'
-                                    cursor='pointer'
-                                    isActive={isOpen}>
+                                    cursor='pointer'>
                                     <Flex gap={3} alignItems='center'>
                                     <p>election data</p>
                                     <FaChevronDown />
